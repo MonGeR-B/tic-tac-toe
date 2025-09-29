@@ -22,8 +22,9 @@ const TicTacToe = () => {
   const [winningCombo, setWinningCombo] = useState([]);
 
   useEffect(() => {
-    checkWinner();
-  }, [board]);
+  checkWinner();
+// eslint-disable-next-line react-hooks/exhaustive-deps
+}, [board]);
 
   const checkWinner = () => {
     for (const combo of WINNING_COMBINATIONS) {
