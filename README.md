@@ -1,4 +1,4 @@
-# Tic Tac Toke — React_app
+# Tic Tac Toe — React_app
 
 A minimal, polished Tic-Tac-Toe game built with React.  
 Dark neon theme, image icons for X/O, win highlighting and a simple scoreboard.
