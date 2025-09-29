@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0f1b21;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.title {
+  font-size: 32px;
+  color: white;
+  margin-top: 20px;
+}
+
+.title span {
+  color: #26ffcb;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.boxes {
+  width: 100px;
+  height: 100px;
+  background-color: #1f3540;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.boxes img {
+  width: 50px;
+  height: 50px;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 20px 0;
+  font-size: 24px;
+  color: white;
+}
+
+.status {
+  margin-top: 15px;
+  font-size: 28px;
+  color: #26ffcb;
+  min-height: 40px;
+  font-weight: bold;
+}
+
+.reset {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #26ffcb;
+  color: #0f1b21;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.reset:hover {
+  background-color: #1dd1a1;
+}
+
+/* Highlight winning boxes */
+.winner {
+  background-color: #26ffcb !important;
+  color: #0f1b21;
+  transition: background-color 0.3s ease;
+}
